@@ -6,7 +6,9 @@ class Airport:
     def __init__(self):
         self.hangar = []
 
-    def permit_landing(self, plane, weather):
+    def permit_landing(self, plane, weather = Weather().isStormy()):
+        if weather == 'Stormy':
+            raise Exception('Weather is stormy')
         plane.land()
         self.hangar.append(plane)
 
