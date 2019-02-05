@@ -40,7 +40,9 @@ class TestAirport(unittest.TestCase):
       with self.assertRaisesRegexp(Exception, 'Weather is stormy'):
         self.airport.permit_landing(self.plane, 'Stormy')
 
-    # def test_takeoff_not_allowed_if_weather_is_stormy(self):
+    def test_takeoff_not_allowed_if_weather_is_stormy(self):
+      with self.assertRaisesRegexp(Exception, 'Weather is stormy'):
+        self.airport.permit_takeoff(self.plane, 'Stormy')
 
 if __name__ == '__main__':
     unittest.main()

@@ -12,7 +12,9 @@ class Airport:
         plane.land()
         self.hangar.append(plane)
 
-    def permit_takeoff(self, plane, weather):
+    def permit_takeoff(self, plane, weather = Weather().isStormy()):
+        if weather == 'Stormy':
+            raise Exception('Weather is stormy')
         if plane not in self.hangar:
             raise Exception('Plane is not in the hangar')
         plane.takeoff()

@@ -7,7 +7,7 @@ class TestWeather(unittest.TestCase):
         self.weather = Weather()
 
     def test_isStormy(self):
-        assert self.weather.isStormy(True) == 'stormy'
+        assert self.weather.isStormy(True) == 'Stormy'
 
 if __name__ == '__main__':
     unittest.main()
