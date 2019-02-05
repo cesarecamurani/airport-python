@@ -25,5 +25,10 @@ class TestAirport(unittest.TestCase):
         self.airport.permit_landing(self.plane)
         self.plane.land.assert_called_with()
 
+    def test_permit_takeoff_calls_plane_takeoff(self):
+        self.airport.permit_landing(self.plane)
+        self.airport.permit_takeoff(self.plane)
+        self.plane.takeoff.assert_called_with()
+
 if __name__ == '__main__':
     unittest.main()

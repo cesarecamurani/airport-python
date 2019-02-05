@@ -10,4 +10,5 @@ class Airport:
         self.hangar.append(plane)
 
     def permit_takeoff(self, plane):
+        plane.takeoff()
         self.hangar.remove(plane)
