@@ -16,7 +16,10 @@ class TestAirport(unittest.TestCase):
         self.airport.permit_landing(self.plane)
         self.assertIn(self.plane, self.airport.hangar)
 
-    
+    def test_permit_takeoff(self):
+        self.airport.permit_landing(self.plane)
+        self.airport.permit_takeoff(self.plane)
+        self.assertNotIn(self.plane, self.airport.hangar)
 
 if __name__ == '__main__':
     unittest.main()
