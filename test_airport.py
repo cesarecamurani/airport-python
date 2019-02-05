@@ -30,5 +30,9 @@ class TestAirport(unittest.TestCase):
         self.airport.permit_takeoff(self.plane)
         self.plane.takeoff.assert_called_with()
 
+    def test_takeoff_not_allowed_if_plane_not_in_hangar(self):
+        with self.assertRaisesRegexp(Exception, 'Plane is not in the hangar'):
+            self.airport.permit_takeoff(self.plane)
+
 if __name__ == '__main__':
     unittest.main()

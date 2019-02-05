@@ -10,5 +10,7 @@ class Airport:
         self.hangar.append(plane)
 
     def permit_takeoff(self, plane):
+        if plane not in self.hangar:
+            raise Exception('Plane is not in the hangar')
         plane.takeoff()
         self.hangar.remove(plane)
