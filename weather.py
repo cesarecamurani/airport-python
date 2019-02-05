@@ -1,9 +1,7 @@
+import random
+
 class Weather:
 
-    def __init__(self):
-        self.stormy = False
-        self.forecast = 'Sunny'
-
-    def isStormy(self):
-        self.stormy = True
-        self.forecast = 'Stormy'
+    def isStormy(self, status = False):
+        if status is False: status = random.choice([True, False])
+        return 'stormy' if status == True else 'sunny'
