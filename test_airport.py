@@ -2,6 +2,7 @@ import unittest
 from mock import Mock
 from airport import Airport
 
+
 class TestAirport(unittest.TestCase):
 
     def setUp(self):
