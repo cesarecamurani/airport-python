@@ -7,4 +7,6 @@ class Plane:
         self.flyingStatus = False
 
     def takeoff(self):
+        if self.flyingStatus == True:
+            raise Exception('Plane is not in the hangar')
         self.flyingStatus = True

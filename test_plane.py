@@ -20,5 +20,9 @@ class TestPlane(unittest.TestCase):
         self.plane.takeoff()
         self.assertTrue(self.plane.flyingStatus)
 
+    def test_plane_cannot_takeoff_if_flying(self):
+        with self.assertRaisesRegexp(Exception, 'Plane is not in the hangar'):
+            self.plane.takeoff()
+
 if __name__ == '__main__':
     unittest.main()
