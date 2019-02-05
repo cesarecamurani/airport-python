@@ -35,5 +35,9 @@ class TestAirport(unittest.TestCase):
         with self.assertRaisesRegexp(Exception, 'Plane is not in the hangar'):
             self.airport.permit_takeoff(self.plane)
 
+    # def test_landing_not_allowed_if_weather_is_stormy(self):
+    #
+    # def test_takeoff_not_allowed_if_weather_is_stormy(self):
+
 if __name__ == '__main__':
     unittest.main()
