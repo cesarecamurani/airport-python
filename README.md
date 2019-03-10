@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# Airport Python
 
-You can use the [editor on GitHub](https://github.com/cesarecamurani/airport-python/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# User stories:
 ```
+As an air traffic controller
+So I can get passengers to a destination
+I want to instruct a plane to land at an airport
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+As an air traffic controller
+So I can get passengers on the way to their destination
+I want to instruct a plane to take off from an airport and confirm that it is no longer in the airport
 
-### Jekyll Themes
+As an air traffic controller
+To ensure safety
+I want to prevent takeoff when weather is stormy
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cesarecamurani/airport-python/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+As an air traffic controller
+To ensure safety
+I want to prevent landing when weather is stormy
 
-### Support or Contact
+As an air traffic controller
+To ensure safety
+I want to prevent landing when the airport is full
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+As the system designer
+So that the software can be used for many different airports
+I would like a default airport capacity that can be overridden as appropriate
+```
